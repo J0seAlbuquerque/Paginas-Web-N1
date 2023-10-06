@@ -1,0 +1,186 @@
+body{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+@font-face {
+    font-family: 'Novaria';
+    src: url(../fonts/novaria/Novaria.ttf);
+}
+
+@font-face {
+    font-family: 'Prototype';
+    src: url(../fonts/Prototype.ttf);
+}
+
+@font-face {
+    font-family: "Noticias";
+    src: url(../fonts/noticia/Noticia-Bold.otf);
+}
+
+.logo{
+    width: 105px;
+    height: 110px;
+    margin-left: 1rem;
+}
+
+.logo:hover{
+    box-shadow: 0px 0px 7px rgb(50, 48, 48);
+    border-radius: 25px;
+}
+
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    padding: 0.04rem;
+    width: 100%;
+    background-color: #9d3b28;
+    border: #CAC2B7 13px;
+    z-index: 100;
+    box-shadow: 0px 0px 7px gray;
+}
+
+.navbar a{
+    font-family: "Novaria";
+    font-size: 1.2rem;
+    border: #CAC2B7 13px;
+    padding: 20px;
+    margin: 25px;
+    text-decoration: none;
+    color: #fdfeff;
+    padding: 10px;
+    line-height: 1;
+    position: relative;
+    letter-spacing: 2px;
+}
+
+.navbar a.ativo,
+.navbar a:hover{
+    padding-bottom: 0.3px;
+    border-bottom: 1px solid #000000;
+}
+
+.banner {
+    text-align: center;
+    padding: 2rem 0; /* Espaçamento acima e abaixo do banner */
+    background-color: #f0f0f0; /* Cor de fundo do banner */
+}
+
+.banner img {
+    max-width: 50%;
+    height: auto;
+}
+
+.banner h1 {
+    font-family: 'Prototype', sans-serif; /* Use sua fonte personalizada se desejar */
+    font-size: 2rem;
+    color: #333; /* Cor do título */
+    margin: 1rem 0; /* Espaçamento acima e abaixo do título */
+}
+
+.banner p {
+    font-family: 'Noticias', sans-serif; /* Use sua fonte personalizada se desejar */
+    font-size: 1.2rem;
+    color: #777; /* Cor da descrição */
+}
+
+
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    gap: 20px; /* Espaçamento entre os boxes */
+    padding: 20px; /* Espaçamento interno do container */
+}
+
+.box {
+    text-align: center;
+    background-color: #8ee89c; /* Cor de fundo do box */
+    padding: 20px; /* Espaçamento interno do box */
+    border: 1px solid #ccc; /* Borda ao redor do box */
+    border-radius: 15px;
+}
+
+.box:hover{
+    box-shadow: 0px 0px 7px green;
+}
+
+.box a{
+    text-decoration: none;
+}
+
+.box a:hover{
+    text-decoration: underline;
+    color: #526858;
+}
+
+.box img {
+    max-width: 100%;
+    height: auto;
+}
+
+.box h2 {
+    color: black;
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.box p {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+/* #footer humilde */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #8a8484;
+    color: #011d00;
+    padding: 6px;
+}
+
+.footer-column {
+    flex-basis: calc(33.33% - 20px); /* Espaço para 3 colunas com margens */
+}
+
+.footer-logo {
+    width: 150px;
+    height: 150px;
+}
+
+.footer-column h3 {
+    font-size: 16px;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #06250f;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Estilos para a seção de direitos autorais */
+.copyright {
+    background-color: rgb(10, 10, 10);
+    text-align: center;
+    font-size: 12px;
+    color: #0ff04f;
+    padding: 10px 0;
+}
+
+#instaDoPai{
+    text-decoration: none;
+    color: white;
+}
+
+/* fim do footer humilde */

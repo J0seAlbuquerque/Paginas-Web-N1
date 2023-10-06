@@ -1,0 +1,240 @@
+body{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+@font-face {
+    font-family: 'Novaria';
+    src: url(../fonts/novaria/Novaria.ttf);
+}
+
+@font-face {
+    font-family: 'Prototype';
+    src: url(../fonts/Prototype.ttf);
+}
+
+@font-face {
+    font-family: "Noticias";
+    src: url(../fonts/noticia/Noticia-Bold.otf);
+}
+
+.logo{
+    width: 105px;
+    height: 110px;
+    margin-left: 1rem;
+}
+
+.logo:hover{
+    box-shadow: 0px 0px 7px rgb(50, 48, 48);
+    border-radius: 25px;
+}
+
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    padding: 0.04rem;
+    width: 100%;
+    background-color: #526858;
+    border: #CAC2B7 13px;
+    z-index: 100;
+    box-shadow: 0px 0px 7px gray;
+}
+
+.navbar a{
+    font-family: "Novaria";
+    font-size: 1.2rem;
+    border: #CAC2B7 13px;
+    padding: 20px;
+    margin: 25px;
+    text-decoration: none;
+    color: #fdfeff;
+    padding: 10px;
+    line-height: 1;
+    position: relative;
+    letter-spacing: 2px;
+}
+
+.navbar a.ativo,
+.navbar a:hover{
+    padding-bottom: 0.3px;
+    border-bottom: 1px solid #6cc56c;
+}
+
+/* #fim nav */
+.banner {
+    margin-top: 7rem;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.banner h1{
+    font-size: 2.3rem;
+    padding: 9px;
+    font-family: "Noticia";
+    text-decoration: underline;
+    letter-spacing: 1rem;
+    box-shadow: 0px 0px 14px rgb(17, 53, 1);
+}
+
+.banner-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+
+.banner-image:hover{
+    box-shadow: 0px 0px 7px rgb(255, 0, 0);
+}
+
+.banner-text {
+    font-family: "Prototype";
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 4px;
+    border-radius: 5px;
+}
+
+.banner-text h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+#botaoG1{
+    font-family: "Prototype";
+    background-color: gray;
+    border-radius: 20px;
+    padding: 10px;
+    color: #101929;
+    text-decoration: none;
+}
+
+#botaoG1:hover{
+    color: white;
+    background-color: red;
+    border: black dashed thin;
+    box-shadow: 0px 0px 7px rgb(255, 0, 0);
+}
+
+.banner-text a{
+    text-decoration: none;
+    color: black;
+}
+
+.banner-text p {
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Estilos para os quadrados de notícias */
+.news-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha quando não couberem mais na largura da tela */
+    margin-top: 20px;
+}
+
+.ultimas{
+    align-items: center;
+    justify-content: center center;
+    padding: 10px;
+    background-color: rgb(199, 192, 192);
+    font-family: "Prototype";
+    text-decoration: underline;
+}
+
+.news-item {
+    flex-basis: calc(33.33% - 10px); /* Espaço para 3 quadrados com margens */
+    background-color: #358a4b;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 8px; /* Espaço entre as notícias */
+}
+
+.news-item img:hover{
+    box-shadow: 0px 0px 27px rgb(1, 33, 214);
+}
+
+.news-item h3{
+    font-size: 28px;
+    font-family: "Noticias";
+}
+
+.news-item p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#botaoVerNoSite{
+    background:#b30805 ;
+    border: none;
+    border-radius: 1em;
+    color: rgb(255, 255, 255);
+    padding: .5rem 1rem;
+    text-align:center;
+    text-decoration:none;
+    display: inline-block;
+}
+
+#botaoVerNoSite:hover{
+    box-shadow: 0px 0px 25px red;
+}
+
+/* #footer humilde */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #8a8484;
+    color: #011d00;
+    padding: 6px;
+}
+
+.footer-column {
+    flex-basis: calc(33.33% - 20px); /* Espaço para 3 colunas com margens */
+}
+
+.footer-logo {
+    width: 150px;
+    height: 150px;
+}
+
+.footer-column h3 {
+    font-size: 16px;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #06250f;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Estilos para a seção de direitos autorais */
+.copyright {
+    background-color: rgb(10, 10, 10);
+    text-align: center;
+    font-size: 12px;
+    color: #0ff04f;
+    padding: 10px 0;
+}
+
+#instaDoPai{
+    text-decoration: none;
+    color: white;
+}
+
+/* fim do footer humilde */
